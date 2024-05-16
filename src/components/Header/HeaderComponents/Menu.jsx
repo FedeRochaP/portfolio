@@ -37,18 +37,18 @@ export default function Menu({ styles, navText, setOpenCurtain, darkMode }) {
 					role="presentation"
 					onClick={toggleDrawer(false)}>
 					<ul className={styles.header__menuList}>
-						<li className={location.pathname === '/' ? styles.active : ''}>
-							<a onClick={() => handlePageChange('/')}>
+						<li className={location.pathname === '/portfolio/' ? styles.active : ''}>
+							<a onClick={() => handlePageChange('/portfolio/')}>
 								{navText.home}
 							</a>
 						</li>
-						<li className={location.pathname === '/about' ? styles.active : ''}>
-							<a onClick={() => handlePageChange('/about')}>
+						<li className={location.pathname === '/portfolio/about' ? styles.active : ''}>
+							<a onClick={() => handlePageChange('/portfolio/about')}>
 								{navText.about}
 							</a>
 						</li>
-						<li className={location.pathname === '/work' ? styles.active : ''}>
-							<a onClick={() => handlePageChange('/work')}>
+						<li className={location.pathname === '/portfolio/work' ? styles.active : ''}>
+							<a onClick={() => handlePageChange('/portfolio/work')}>
 								{navText.work}
 							</a>
 						</li>

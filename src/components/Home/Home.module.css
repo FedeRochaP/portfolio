@@ -16,7 +16,9 @@
 
 			img {
 				width: 100%;
+				height: 100%;
 				border-radius: 50%;
+				object-fit: cover;
 			}
 		}
 
@@ -138,7 +140,7 @@
 					color: white;
 					border: 2px solid var(--violet);
 				}
-				
+
 				a:hover {
 					background: var(--violet);
 				}

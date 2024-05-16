@@ -1,11 +1,11 @@
 import React from 'react'
 
-import ok from '../../../assets/img/ok.jpg'
+import AvatarImg from '../../../assets/img/fede.jpeg'
 
 export default function Avatar({ styles }) {
 	return (
 		<div className={styles.about__img}>
-			<img src={ok} alt="" />
+			<img src={AvatarImg} alt="" />
 		</div>
 	)
 }

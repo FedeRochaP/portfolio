@@ -17,7 +17,7 @@ export default function Nav({ styles, navText, setOpenCurtain }) {
 		<nav className={styles.header__nav}>
 			<ul>
 				<li className={location.pathname === '/portfolio/' ? styles.active : ''}>
-					<a onClick={() => handlePageChange('/portfolio-2/')}>
+					<a onClick={() => handlePageChange('/portfolio/')}>
 						{navText.home}
 					</a>
 				</li>

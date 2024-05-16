@@ -1,6 +1,6 @@
 import React from 'react'
 
-import AvatarImg from '../../../assets/img/ok.jpg'
+import AvatarImg from '../../../assets/img/fede.jpeg'
 
 export default function Avatar({ styles, motion }) {
 	return (
