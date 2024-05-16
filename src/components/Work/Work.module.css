@@ -1,6 +1,6 @@
 .work {
 	width: 100%;
-	max-width: 1200px;
+	max-width: 900px;
 
 	.work__container {
 		width: 100%;
@@ -32,8 +32,8 @@
 			gap: 30px;
 
 			.work__card {
-				width: 440px;
-				height: 330px;
+				width: 400px;
+				height: 290px;
 				border-radius: 20px;
 				position: relative;
 				cursor: pointer;
