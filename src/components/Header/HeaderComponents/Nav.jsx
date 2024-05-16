@@ -16,18 +16,18 @@ export default function Nav({ styles, navText, setOpenCurtain }) {
 	return (
 		<nav className={styles.header__nav}>
 			<ul>
-				<li className={location.pathname === '/portfolio-2/' ? styles.active : ''}>
+				<li className={location.pathname === '/portfolio/' ? styles.active : ''}>
 					<a onClick={() => handlePageChange('/portfolio-2/')}>
 						{navText.home}
 					</a>
 				</li>
-				<li className={location.pathname === '/portfolio-2/about' ? styles.active : ''}>
-					<a onClick={() => handlePageChange('/portfolio-2/about')}>
+				<li className={location.pathname === '/portfolio/about' ? styles.active : ''}>
+					<a onClick={() => handlePageChange('/portfolio/about')}>
 						{navText.about}
 					</a>
 				</li>
-				<li className={location.pathname === '/portfolio-2/work' ? styles.active : ''}>
-					<a onClick={() => handlePageChange('/portfolio-2/work')}>
+				<li className={location.pathname === '/portfolio/work' ? styles.active : ''}>
+					<a onClick={() => handlePageChange('/portfolio/work')}>
 						{navText.work}
 					</a>
 				</li>

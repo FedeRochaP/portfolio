@@ -53,8 +53,7 @@
 					justify-content: center;
 
 					.about__card {
-						width: 100%;
-						max-width: 260px;
+						width: 260px;
 						padding: 10px;
 						display: flex;
 						flex-direction: column;
