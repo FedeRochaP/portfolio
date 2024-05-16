@@ -1,0 +1,158 @@
+.work {
+	width: 100%;
+	max-width: 1200px;
+
+	.work__container {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 50px;
+
+		.work__description {
+			display: flex;
+			flex-direction: column;
+			gap: 20px;
+			text-align: center;
+
+			.work__title {
+				h2 {
+					font-size: 28px;
+				}
+			}
+		}
+
+		.work__cards {
+			max-height: 500px;
+			overflow-y: scroll;
+			padding: 30px;
+			display: flex;
+			justify-content: center;
+			flex-wrap: wrap;
+			gap: 30px;
+
+			.work__card {
+				width: 440px;
+				height: 330px;
+				border-radius: 20px;
+				position: relative;
+				cursor: pointer;
+
+				img {
+					width: 100%;
+					/* min-width: 390px; */
+					height: 100%;
+					object-fit: cover;
+					border-radius: 16px;
+				}
+
+				.work__cardText {
+					width: 100%;
+					height: 100%;
+					background-color: rgba(0, 0, 0, 0.8);
+					color: white;
+					position: absolute;
+					padding: 10px;
+					top: 50%;
+					left: 50%;
+					transform: translate(-50%, -50%);
+					display: flex;
+					flex-direction: column;
+					justify-content: center;
+					align-items: center;
+					gap: 10px;
+					border-radius: 5px;
+					opacity: 0;
+					transition: opacity 0.3s ease;
+					border-radius: 16px;
+					text-align: center;
+
+					p {
+						font-size: 12px;
+					}
+				}
+
+				.work__cardText:hover {
+					opacity: 1;
+				}
+			}
+		}
+	}
+}
+
+.darkTheme {
+	.work__container {
+		.work__description {
+			h2 {
+				color: var(--violet);
+			}
+
+			p {
+				color: white;
+			}
+		}
+
+		.work__cards {
+			.work__card {
+				border: 4px solid var(--violet)
+			}
+		}
+	}
+
+	::-webkit-scrollbar-track {
+		background: var(--light-gray);
+	}
+
+	::-webkit-scrollbar-thumb {
+		background: var(--violet);
+	}
+}
+
+/* Light theme */
+.lightTheme {
+	.work__container {
+		.work__description {
+			h2 {
+				color: var(--light-blue);
+			}
+
+			p {
+				color: var(--deep-blue);
+			}
+		}
+
+		.work__cards {
+			.work__card {
+				border: 4px solid var(--light-blue)
+			}
+		}
+	}
+
+	::-webkit-scrollbar-track {
+		background: var(--light-gray);
+	}
+
+	::-webkit-scrollbar-thumb {
+		background: var(--light-blue);
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.work {
+		.work__container {
+			.work__cards {
+				.work__card {
+					width: 300px;
+					height: 220px;
+
+					.work__cardText {
+						p {
+							font-size: 11px;
+						}
+					}
+				}
+			}
+		}
+	}
+
+}

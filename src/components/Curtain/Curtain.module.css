@@ -1,0 +1,49 @@
+.courtain {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 999;
+}
+
+.courtainOpen {
+	transform-origin: left;
+	animation: openCourtain 0.6s ease forwards;
+}
+
+.courtainClose {
+	transform-origin: right;
+	animation: closeCourtain 0.6s ease forwards;
+}
+
+@keyframes openCourtain {
+	0% {
+		transform: scaleX(0);
+	}
+
+	100% {
+		transform: scaleX(1);
+	}
+}
+
+@keyframes closeCourtain {
+	0% {
+		transform: scaleX(1);
+	}
+
+	100% {
+		transform: scaleX(0);
+	}
+}
+
+
+/* Dark theme */
+.darkTheme {
+	background-color: var(--violet);
+}
+
+/* Light theme */
+.lightTheme {
+	background-color: var(--light-blue);
+}

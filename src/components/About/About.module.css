@@ -1,0 +1,218 @@
+.about {
+	width: 100%;
+	max-width: 1200px;
+	text-align: center;
+
+	.about__container {
+		display: flex;
+		align-items: center;
+		gap: 100px;
+
+		.about__leftSide {
+
+			.about__img {
+				width: 300px;
+				height: 300px;
+				margin: auto;
+				margin-bottom: 30px;
+				border-radius: 50%;
+
+				img {
+					width: 100%;
+					border-radius: 50%;
+				}
+			}
+		}
+
+		.about__rightSide {
+			display: flex;
+			flex-direction: column;
+			gap: 50px;
+
+			.about__title {
+				h2 {
+					font-size: 28px;
+				}
+			}
+
+			.about__description {
+				display: flex;
+				flex-direction: column;
+				gap: 20px;
+
+
+				.about__text {
+					display: flex;
+					flex-direction: column;
+					gap: 10px;
+				}
+
+				.about__cards {
+					width: 100%;
+					display: flex;
+					justify-content: center;
+
+					.about__card {
+						width: 100%;
+						max-width: 260px;
+						padding: 10px;
+						display: flex;
+						flex-direction: column;
+						align-items: center;
+						gap: 5px;
+						border-radius: 15px;
+
+						.about__cardText {
+							display: flex;
+							align-items: center;
+							gap: 5px;
+
+							svg {
+								font-size: 20px;
+							}
+						}
+					}
+				}
+			}
+
+			.about__skills {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				gap: 20px;
+
+				.about__icons {
+					display: flex;
+					justify-content: center;
+					flex-wrap: wrap;
+					gap: 30px;
+
+					.about__icon {
+						width: 70px;
+						height: 80px;
+						padding: 5px;
+						display: flex;
+						flex-direction: column;
+						justify-content: space-between;
+						align-items: center;
+						text-align: center;
+						gap: 5px;
+
+						img {
+							width: 36px;
+							height: 36px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+/* Dark theme */
+.darkTheme {
+	.about__container {
+		.about__leftSide {
+			.about__img {
+				border: solid 4px var(--violet);
+			}
+		}
+
+		.about__rightSide {
+			.about__title {
+				color: var(--violet);
+			}
+
+			.about__description {
+				.about__text {
+					color: white;
+				}
+
+				.about__cards {
+					.about__card {
+						border: 2px solid var(--violet);
+
+						h3 {
+							color: var(--violet);
+						}
+
+						p,
+						svg {
+							color: white;
+						}
+					}
+				}
+			}
+
+			.about__skills {
+				.about__icons {
+					.about__icon {
+						i {
+							color: white;
+						}
+
+						p {
+							color: var(--light-gray);
+						}
+
+						img {
+							filter: invert(94%) sepia(76%) saturate(0%) hue-rotate(173deg) brightness(105%) contrast(105%);
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+/* Light theme */
+.lightTheme {
+	.about__container {
+		.about__leftSide {
+			.about__img {
+				border: solid 4px var(--light-blue);
+			}
+		}
+
+		.about__rightSide {
+			.about__title {
+				color: var(--light-blue);
+			}
+
+			.about__description {
+				.about__text {
+					color: black;
+				}
+
+				.about__cards {
+					.about__card {
+						border: 2px solid var(--light-blue);
+
+						h3 {
+							color: var(--light-blue);
+						}
+
+						p,
+						svg {
+							color: var(--light-gray);
+						}
+					}
+				}
+			}
+
+			.about__skills {
+				.about__icons {
+					.about__icon {
+						i {
+							color: var(--deep-blue);
+						}
+
+						p {
+							color: var(--light-gray);
+						}
+					}
+				}
+			}
+		}
+	}
+}

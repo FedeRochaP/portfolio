@@ -1,0 +1,22 @@
+.App {
+	transition: 0.4s;
+
+	.App__container {
+		width: 100%;
+		min-height: 90vh;
+		padding: 20px;
+		margin-top: 90px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+}
+
+
+.darkTheme {
+	background: var(--deep-blue);
+}
+
+.lightTheme {
+	background: white;
+}
