@@ -35,9 +35,9 @@ function AppContent() {
 				<Curtain isOpen={openCurtain} />
 				<div className="App__container">
 					<Routes>
-						<Route path="/" element={<Home />} />
-						<Route path="/about" element={<About />} />
-						<Route path="/work" element={<Work />} />
+						<Route path="/portfolio-2/" element={<Home />} />
+						<Route path="/portfolio-2/about" element={<About />} />
+						<Route path="/portfolio-2/work" element={<Work />} />
 					</Routes>
 				</div>
 			</div>
