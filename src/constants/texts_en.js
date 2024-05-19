@@ -28,5 +28,5 @@ export const aboutText = {
 // Work
 export const workText = {
 	work: 'My work',
-	description: `In this section, you will find a collection of my professional work. Each project represents my practical approach and commitment to delivering effective and well-executed solutions. From web application development to collaboration in UX/UI, each piece is the result of a collaborative process focused on client needs and the quality of the final product.`,
+	description: `In this section, you will find a collection of my professional works. While they do not include all the projects I have worked on, I consider them an important part of my evolution as a programmer. Each project represents my practical approach and commitment to delivering effective and well-executed solutions. From web application development to collaboration in UX/UI, each work is the result of a collaboration process focused on client needs and the quality of the final product.`,
 }

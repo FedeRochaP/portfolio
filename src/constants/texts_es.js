@@ -28,5 +28,5 @@ export const aboutText = {
 // Work
 export const workText = {
 	work: 'Mi trabajo',
-	description: `En esta sección, encontrarás una colección de mis trabajos profesionales. Cada proyecto representa mi enfoque práctico y mi compromiso con la entrega de soluciones efectivas y bien ejecutadas. Desde el desarollo de aplicaciones web hasta colaboracion en UX/UI, cada trabajo es el resultado de un proceso de colaboración centrado en las necesidades del cliente y en la calidad del producto final.`,
+	description: `En esta sección, encontrarás una colección de mis trabajos profesionales. Si bien no incluyen todos los proyectos en los que he trabajado, los considero una parte importante de mi evolución como programador. Cada proyecto representa mi enfoque práctico y mi compromiso con la entrega de soluciones efectivas y bien ejecutadas. Desde el desarollo de aplicaciones web hasta colaboracion en UX/UI, cada trabajo es el resultado de un proceso de colaboración centrado en las necesidades del cliente y en la calidad del producto final.`,
 }
