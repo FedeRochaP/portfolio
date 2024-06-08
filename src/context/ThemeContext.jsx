@@ -5,7 +5,9 @@ const ThemeContext = createContext();
 export const useTheme = () => useContext(ThemeContext);
 
 export const ThemeProvider = ({ children }) => {
-	const [darkMode, setDarkMode] = useState(true);
+	const [darkMode, setDarkMode] = useState(
+		window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+	);
 
 	const toggleDarkMode = () => {
 		setDarkMode(prevMode => !prevMode);
@@ -21,3 +23,4 @@ export const ThemeProvider = ({ children }) => {
 		</ThemeContext.Provider>
 	);
 };
+

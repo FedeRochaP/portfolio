@@ -5,7 +5,8 @@ const LanguageContext = createContext();
 export const useLanguage = () => useContext(LanguageContext);
 
 export const LanguageProvider = ({ children }) => {
-    const [language, setLanguage] = useState('es'); 
+    const systemLanguage = navigator.language.startsWith('es') ? 'es' : 'en';
+    const [language, setLanguage] = useState(systemLanguage); 
 
     const changeLanguage = (newLanguage) => {
         setLanguage(newLanguage);
