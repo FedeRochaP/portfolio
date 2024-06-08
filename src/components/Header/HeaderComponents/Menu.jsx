@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 
 // Drawer
@@ -19,6 +19,10 @@ export default function Menu({ styles, navText, setOpenCurtain, darkMode }) {
 			navigate(path);
 		}, 600);
 	};
+
+	useEffect(() => {
+		window.scrollTo(0, 0);
+	}, [location]);
 
 	const [open, setOpen] = React.useState(false);
 

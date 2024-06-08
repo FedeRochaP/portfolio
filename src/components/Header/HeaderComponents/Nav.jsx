@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 
 export default function Nav({ styles, navText, setOpenCurtain }) {
@@ -12,6 +12,10 @@ export default function Nav({ styles, navText, setOpenCurtain }) {
 			navigate(path);
 		}, 600);
 	};
+
+	useEffect(() => {
+		window.scrollTo(0, 0);
+	}, [location]);
 
 	return (
 		<nav className={styles.header__nav}>

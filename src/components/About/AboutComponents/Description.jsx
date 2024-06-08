@@ -33,6 +33,15 @@ export default function Description({ styles, aboutText }) {
 						</div>
 					</div>
 				</Fade>
+				{/* <Fade duration={1000} delay={1200}>
+					<div className={styles.about__card}>
+						<h3>{aboutText.experience}</h3>
+						<div className={styles.about__cardText}>
+							<PersonIcon />
+							<p>+2 {aboutText.years}</p>
+						</div>
+					</div>
+				</Fade> */}
 			</div>
 		</div>
 	)

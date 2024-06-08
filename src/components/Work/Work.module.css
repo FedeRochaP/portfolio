@@ -23,6 +23,7 @@
 		}
 
 		.work__cards {
+			max-width: 600px;
 			max-height: 500px;
 			overflow-y: scroll;
 			padding: 30px;
@@ -32,8 +33,8 @@
 			gap: 30px;
 
 			.work__card {
-				width: 400px;
-				height: 290px;
+				width: 600px;
+				height: 390px;
 				border-radius: 20px;
 				position: relative;
 				cursor: pointer;
@@ -43,7 +44,7 @@
 					/* min-width: 390px; */
 					height: 100%;
 					object-fit: cover;
-					border-radius: 16px;
+					border-radius: 17px;
 				}
 
 				.work__cardText {
@@ -67,8 +68,13 @@
 					border-radius: 16px;
 					text-align: center;
 
+					h4 {
+						font-size: 18px;
+					}
+
 					p {
-						font-size: 12px;
+						font-size: 16px;
+						max-width: 400px;
 					}
 				}
 
@@ -94,7 +100,7 @@
 
 		.work__cards {
 			.work__card {
-				border: 4px solid var(--violet)
+				border: 3px solid var(--violet)
 			}
 		}
 	}
@@ -123,7 +129,7 @@
 
 		.work__cards {
 			.work__card {
-				border: 4px solid var(--light-blue)
+				border: 3px solid var(--light-blue)
 			}
 		}
 	}
