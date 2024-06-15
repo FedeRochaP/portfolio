@@ -18,7 +18,7 @@ export default function Media({ styles, motion }) {
 					<LinkedInIcon />
 				</div>
 			</motion.a>
-			<motion.a variants={item} href="mailto:ejemplo@correo.com" target='_blank'>
+			<motion.a variants={item} href="mailto:federochacueli@gmail.com" target='_blank'>
 				<div className={styles.home__heroMediaIcon}>
 					<EmailIcon />
 				</div>
