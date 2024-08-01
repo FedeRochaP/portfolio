@@ -19,7 +19,7 @@ export const aboutText = {
 	title: 'Sobre mi',
 	about: '¡Hola! Soy Fede, un desarrollador Front-end especializado en la construcción de sitios web dinámicos y funcionales. Mi enfoque principal radica en la implementación de soluciones creativas y eficientes para convertir ideas en experiencias digitales significativas.',
 	skills: 'Utilizando tecnologías como HTML, CSS, JavaScript, y frameworks como React.js, Next.js y Svelte, ademas de implementar plantillas de Blade-Laravel, me dedico a crear sitios web de alta calidad que cumplen con los estándares más exigentes. Además, integro principios de UX/UI para garantizar una experiencia de usuario intuitiva y atractiva, así como experiencia en el desarrollo móvil con React Native.',
-	social: 'Gran parte de estas habilidades las he adquirido a través de la colaboración y participación en grupos de trabajo en diversos proyectos, así como también mediante el desarrollo de proyectos personales que me han permitido explorar y perfeccionar mis habilidades en el campo del desarrollo web.',
+	social: 'Gran parte de estas habilidades las he adquirido a través de la colaboración y participación en equipos de trabajo en diversos proyectos, así como mediante el desarrollo de iniciativas personales que me han permitido explorar y perfeccionar mis competencias en el campo del desarrollo web.',
 	experience: 'Experiencia',
 	years: 'Años',
 	titleSkills: 'Mis habilidades',
