@@ -38,3 +38,18 @@ body {
 	display: flex;
 	justify-content: center;
 }
+
+@keyframes fadeIn {
+	from {
+	  opacity: 0;
+	}
+	to {
+	  opacity: 1;
+	}
+   }
+   
+   .fadeInDelayed {
+	opacity: 0; /* Comienza invisible */
+	animation: fadeIn 1s forwards; /* La animación dura 1 segundo y mantiene el estado final */
+	animation-delay: 1s; /* Retraso de 1 segundo antes de comenzar la animación */
+   }

@@ -22,7 +22,7 @@ export default function Cards({ styles, getWorkData, motion }) {
 				prevEl: `.${styles.work__arrowPrev}`,
 			}}
 			loop={false} // Desactiva el loop si no deseas un bucle infinito
-			className={styles.work__cards}
+			className={`${styles.work__cards} fadeInDelayed`}
 		>
 			{getWorkData().map((img, index) => (
 				<SwiperSlide key={index}>
