@@ -23,21 +23,17 @@
 		}
 
 		.work__cards {
-			max-width: 600px;
-			max-height: 500px;
-			overflow-y: scroll;
-			padding: 30px;
+			width: 80%;
+			/* max-height: 300px; */
 			display: flex;
-			justify-content: center;
-			flex-wrap: wrap;
-			gap: 30px;
+			align-items: center;
 
 			.work__card {
-				width: 600px;
-				height: 390px;
+				width: 500px;
+				height: 360px;
 				border-radius: 20px;
 				position: relative;
-				cursor: pointer;
+				/* cursor: pointer; */
 
 				img {
 					width: 100%;
@@ -76,10 +72,66 @@
 						font-size: 16px;
 						max-width: 400px;
 					}
+
+					a {
+						position: absolute;
+						top: 20px;
+						right: 20px;
+						text-decoration: none;
+
+						img {
+							width: 30px;
+							filter: invert(100%) sepia(0%) saturate(1834%) hue-rotate(337deg) brightness(109%) contrast(99%);
+							border-radius: 0px;
+						}
+					}
 				}
 
 				.work__cardText:hover {
 					opacity: 1;
+				}
+			}
+
+			.work__arrowBtns {
+
+				.work__arrowNext,
+				.work__arrowPrev {
+					position: absolute;
+					top: 50%;
+					transform: translateY(-50%);
+					width: 40px;
+					height: 40px;
+					background-color: rgba(0, 0, 0, 0.5);
+					border-radius: 50%;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					cursor: pointer;
+					z-index: 10;
+				}
+
+				.work__arrowNext {
+					right: 10px;
+					/* Posición del botón de la derecha */
+				}
+
+				.work__arrowPrev {
+					left: 10px;
+					/* Posición del botón de la izquierda */
+				}
+
+				.work__arrowNext img,
+				.work__arrowPrev img {
+					width: 20px;
+					height: 20px;
+					filter: invert(1);
+					/* Invertir colores para iconos blancos */
+				}
+
+				.work__arrowNext:hover,
+				.work__arrowPrev:hover {
+					background-color: rgba(0, 0, 0, 0.7);
+					/* Color de fondo al pasar el mouse */
 				}
 			}
 		}
@@ -100,7 +152,7 @@
 
 		.work__cards {
 			.work__card {
-				border: 3px solid var(--violet)
+				border: 3px solid var(--violet);
 			}
 		}
 	}
@@ -147,6 +199,11 @@
 	.work {
 		.work__container {
 			.work__cards {
+				width: 100%;
+				display: flex;
+				flex-direction: column;
+				gap: 35px;
+
 				.work__card {
 					width: 300px;
 					height: 220px;
@@ -155,6 +212,34 @@
 						p {
 							font-size: 11px;
 						}
+
+						a {
+							img {
+								width: 20px;
+							}
+						}
+					}
+				}
+
+				.work__arrowBtns {
+					display: flex;
+					gap: 30px;
+
+					.work__arrowNext,
+					.work__arrowPrev {
+						position: initial;
+						display: flex;
+					}
+
+					.work__arrowNext {
+						right: 0px;
+						order: 1;
+						/* Posición del botón de la derecha */
+					}
+
+					.work__arrowPrev {
+						left: 0px;
+						/* Posición del botón de la izquierda */
 					}
 				}
 			}

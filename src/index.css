@@ -33,3 +33,8 @@ body {
 	border-radius: 10px;
 	margin-left: 3px;
 }
+
+.swiper-slide {
+	display: flex;
+	justify-content: center;
+}
