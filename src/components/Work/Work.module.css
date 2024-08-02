@@ -224,6 +224,7 @@
 				.work__arrowBtns {
 					display: flex;
 					gap: 30px;
+					margin-bottom: 40px;
 
 					.work__arrowNext,
 					.work__arrowPrev {
