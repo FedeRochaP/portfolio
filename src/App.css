@@ -3,7 +3,7 @@
 
 	.App__container {
 		width: 100%;
-		min-height: 100vh;
+		min-height: 90vh;
 		padding: 20px;
 		margin-top: 90px;
 		display: flex;
