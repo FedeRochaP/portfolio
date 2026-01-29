@@ -29,7 +29,7 @@ export default function Description({ styles, aboutText }) {
 						<h3>{aboutText.experience}</h3>
 						<div className={styles.about__cardText}>
 							<PersonIcon />
-							<p>+2 {aboutText.years}</p>
+							<p>+4 {aboutText.years}</p>
 						</div>
 					</div>
 				</Fade>

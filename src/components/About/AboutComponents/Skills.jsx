@@ -2,9 +2,7 @@ import React from 'react'
 
 import { Fade } from "react-awesome-reveal";
 
-import { container, item } from '../../../assets/css/motion'
-
-export default function Skills({ styles, aboutText, iconsData, motion }) {
+export default function Skills({ styles, aboutText, iconsData }) {
 	return (
 		<div className={styles.about__skills}>
 			<Fade duration={1000} delay={200}>
@@ -13,17 +11,16 @@ export default function Skills({ styles, aboutText, iconsData, motion }) {
 				</div>
 			</Fade>
 
-			<motion.div className={`container ${styles.about__icons}`}
-				variants={container}
-				initial="hidden"
-				animate="visible">
+			<div className={styles.about__icons}>
 				{iconsData.map((icon, index) => (
-					<motion.div key={index} className={`item ${styles.about__icon}`} variants={item}>
-						<img src={icon.svg} alt={icon.name} />
-						<p>{icon.name}</p>
-					</motion.div>
+					<Fade key={index} duration={1100} delay={index * 100} triggerOnce>
+						<div className={styles.about__icon}>
+							<img src={icon.svg} alt={icon.name} />
+							<p>{icon.name}</p>
+						</div>
+					</Fade>
 				))}
-			</motion.div>
+			</div>
 		</div>
 	)
 }

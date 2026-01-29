@@ -34,6 +34,12 @@
 			.about__title {
 				h2 {
 					font-size: 28px;
+					background: linear-gradient(90deg, var(--violet), var(--light-blue));
+					-webkit-background-clip: text;
+					-webkit-text-fill-color: transparent;
+					background-clip: text;
+					-webkit-animation: gradientShift 3s ease-in-out infinite;
+					animation: gradientShift 3s ease-in-out infinite;
 				}
 			}
 
@@ -99,10 +105,17 @@
 						align-items: center;
 						text-align: center;
 						gap: 5px;
+						transition: all 0.3s ease;
+						cursor: pointer;
 
 						img {
 							width: 36px;
 							height: 36px;
+							transition: all 0.3s ease;
+						}
+
+						p {
+							transition: all 0.3s ease;
 						}
 					}
 				}
@@ -110,6 +123,7 @@
 		}
 	}
 }
+
 
 /* Dark theme */
 .darkTheme {
@@ -121,10 +135,6 @@
 		}
 
 		.about__rightSide {
-			.about__title {
-				color: var(--violet);
-			}
-
 			.about__description {
 				.about__text {
 					color: white;
@@ -160,6 +170,15 @@
 						img {
 							filter: invert(94%) sepia(76%) saturate(0%) hue-rotate(173deg) brightness(105%) contrast(105%);
 						}
+
+						&:hover {
+							transform: translateY(-5px);
+
+							img {
+								filter: invert(94%) sepia(76%) saturate(0%) hue-rotate(173deg) brightness(105%) contrast(105%) drop-shadow(0 4px 12px var(--violet));
+								transform: scale(1.15);
+							}
+						}
 					}
 				}
 			}
@@ -177,10 +196,6 @@
 		}
 
 		.about__rightSide {
-			.about__title {
-				color: var(--light-blue);
-			}
-
 			.about__description {
 				.about__text {
 					color: black;
@@ -211,6 +226,15 @@
 
 						p {
 							color: var(--light-gray);
+						}
+
+						&:hover {
+							transform: translateY(-5px);
+
+							img {
+								filter: drop-shadow(0 4px 12px var(--light-blue));
+								transform: scale(1.15);
+							}
 						}
 					}
 				}
