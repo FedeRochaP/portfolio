@@ -18,12 +18,12 @@
 			.work__title {
 				h2 {
 					font-size: 28px;
-					background: linear-gradient(90deg, var(--violet), var(--light-blue));
+					background: linear-gradient(90deg, var(--violet), var(--light-blue), var(--violet), var(--light-blue));
+					background-size: 300% 100%;
 					-webkit-background-clip: text;
 					-webkit-text-fill-color: transparent;
 					background-clip: text;
-					-webkit-animation: gradientShift 3s ease-in-out infinite;
-					animation: gradientShift 3s ease-in-out infinite;
+					animation: gradientMove 4s ease infinite;
 				}
 			}
 		}
@@ -224,6 +224,10 @@
 .darkTheme {
 	.work__container {
 		.work__description {
+			h2 {
+				color: var(--violet);
+			}
+
 			p {
 				color: white;
 			}
@@ -278,6 +282,10 @@
 .lightTheme {
 	.work__container {
 		.work__description {
+			h2 {
+				color: var(--light-blue);
+			}
+
 			p {
 				color: var(--deep-blue);
 			}
